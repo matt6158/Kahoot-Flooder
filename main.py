@@ -1,25 +1,23 @@
 import os
 print("Installing libs.")
 try:
-    os.system("pip install pypresence")
-    os.system("pip install colorama")
-    os.system("pip install pypresence")
+    from kahoot import client 
+    import string 
+    import random 
+    import colorama 
+    from colorama import Fore, Back, Style  
+    import time 
+    import threading
+    import ctypes
+    import requests
+    from pypresence import Presence 
 except:
     os.system("pip install pypresence")
     os.system("pip install colorama")
-    os.system("pip install pypresence") 
+    os.system("pip install KahootPY") 
 
 
-from kahoot import client 
-import string 
-import random 
-import colorama 
-from colorama import Fore, Back, Style  
-import time 
-import threading
-import ctypes
-import requests
-from pypresence import Presence 
+
 bot = client() 
 version = '1.0'
 os.system('cls') 
